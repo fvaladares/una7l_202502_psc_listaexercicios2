@@ -1,0 +1,1 @@
+rootProject.name = "una7l_202502_psc_listaexercicios2"
