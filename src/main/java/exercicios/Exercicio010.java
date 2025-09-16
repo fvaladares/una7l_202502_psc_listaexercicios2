@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Exercicio010 {
     public void executar(Scanner input) {
+
+        // ANSI escape code for red text
+        String ansiRed = "\u001B[31m";
+        // ANSI escape code to reset text formatting
+        String ansiReset = "\u001B[0m";
+
         String nomeUsuario;
         String senha;
 
@@ -38,7 +44,7 @@ public class Exercicio010 {
                     usuarioAutenticado = true;
                 } else {
                     System.out.println();
-                    System.out.println("Senha incorreta");
+                    System.out.println(ansiRed + "Senha incorreta" + ansiReset);
                     numeroTentativas = numeroTentativas + 1;
 //                    numeroTentativas+=1;
                 }
